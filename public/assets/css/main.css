@@ -1,0 +1,24 @@
+body{
+    background: #f700ff;
+background-image: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(87, 87, 217, 1) 48%, rgba(9, 227, 235, 1) 100%);
+}
+
+.home-box{
+    background-color: rgba(0, 0, 0, .75);
+    color: white;
+    margin: auto;
+    text-align: center;
+    min-width: 50%;
+    max-width: fit-content;
+    border-radius: 3px;
+    padding: 50px;
+}
+
+a{
+    color: #2de2e6;
+}
+
+a:hover{
+        color: #fd3777;
+}
+

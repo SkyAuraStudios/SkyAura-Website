@@ -12,13 +12,50 @@ background-image: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(87, 87, 2
     max-width: fit-content;
     border-radius: 3px;
     padding: 50px;
+    margin-top: 50px;
 }
 
-a{
+.box{
+    background-color: rgba(0, 0, 0, .75);
+    color: white;
+    margin: auto;
+    text-align: center;
+    min-width: 50%;
+    max-width: fit-content;
+    border-radius: 3px;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.site-nav{
+    background-color: rgba(0, 0, 0, .75);
+    margin: auto;
+    width: 100%;
+    border-radius: 3px;
+    
+    height: auto;
+}
+
+.site-nav a{
     color: #2de2e6;
+    background-color: black;
 }
 
 a:hover{
         color: #fd3777;
+    background-color: black;
+
+}
+
+.download-button{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 

@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyAura Builds</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About SkyAura</title>
+    <link rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
     <div class="site-main">
-        <div class="site-nav">
-            <%- include('includes/nav') %>    
-        </div>
-        <div class="main-content">
-            <div class="box">
+        <!-- Navigation -->
+        <nav class="site-nav">
+            <%- include('includes/nav') %>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="box about-team">
                 <h1>About the SkyAura Team</h1>
-                <div class="button-options">
-                    <section>
+
+                <div class="content-sections">
+                    <!-- Team Section -->
+                    <article class="team-section">
                         <h2>Our Team</h2>
-                        <ul>
-                                <strong>Cybrix</strong> - Lead Developer<br>
-                                Responsible for core development, backend architecture, and project management.
-                                <br>
-                                <strong>SlyTheFloof</strong> - Co-Developer<br>
-                                Aids in both frontend and backend architecture and project management.
-                            <!-- Add more team members and roles as needed -->
+                        <ul class="team-list">
+                            <li>
+                                <strong>Cybrix</strong> — Lead Developer  
+                                <span class="role-desc">Responsible for core development, backend architecture, and project management.</span>
+                            </li>
+                            <li>
+                                <strong>SlyTheFloof</strong> — Co-Developer  
+                                <span class="role-desc">Aids in both frontend and backend architecture, as well as project management.</span>
+                            </li>
                         </ul>
-                    </section>
-                    <section>
+                    </article>
+
+                    <!-- About Section -->
+                    <article class="about-section">
                         <h2>About SkyAura</h2>
                         <p>
-                            SkyAura is a collaborative project focused on delivering innovative web solutions. Our team combines technical expertise and creative vision to build engaging and reliable digital experiences.
+                            SkyAura is a collaborative project focused on delivering innovative web solutions. Our team
+                            combines technical expertise and creative vision to build engaging and reliable digital
+                            experiences.
                         </p>
-                    </section>
+                    </article>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>

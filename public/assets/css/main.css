@@ -1,61 +1,40 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('/font/Barlow-Regular.ttf');
+}
+
 body{
-    background: #f700ff;
-background-image: linear-gradient(90deg, rgba(247, 0, 255, 1) 0%, rgba(87, 87, 217, 1) 48%, rgba(9, 227, 235, 1) 100%);
+    background-color: rgba(26, 26, 26, 0.95);
+    font-family: 'Barlow', sans-serif;
 }
 
-.home-box{
-    background-color: rgba(0, 0, 0, .75);
-    color: white;
-    margin: auto;
-    text-align: center;
-    min-width: 50%;
-    max-width: fit-content;
-    border-radius: 3px;
-    padding: 50px;
-    margin-top: 50px;
-}
-
-.box{
-    background-color: rgba(0, 0, 0, .75);
-    color: white;
-    margin: auto;
-    text-align: center;
-    min-width: 50%;
-    max-width: fit-content;
-    border-radius: 3px;
-    padding: 50px;
-    margin-top: 50px;
+h1, h2, h3, h4, h5, h6, p, a, li, span, div{
+    color: #f0f0f0;
 }
 
 .site-nav{
-    background-color: rgba(0, 0, 0, .75);
-    margin: auto;
-    width: 100%;
-    border-radius: 3px;
-    
-    height: auto;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #333333;
+    height: 75px;
+    padding: 0%;
 }
-
 .site-nav a{
-    color: #2de2e6;
-    background-color: black;
-}
-
-a:hover{
-        color: #fd3777;
-    background-color: black;
-
-}
-
-.download-button{
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
+    vertical-align: middle;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    height: 100%;
+    justify-content: space-around;
 }
 
+.site-nav a:hover{
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: black;
+    height: 100%;
+}
+
+.home-box{
+    background-color: #000000;
+    border: 2px solid #444444;
+    padding: 20px;
+    margin: 20px;
+}

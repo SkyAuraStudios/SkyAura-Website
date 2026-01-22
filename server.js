@@ -1,31 +1,22 @@
-const express = require('express')
+const express = require('express');
+const app = express();
 
-const app = express()
+const ejs = require('ejs');
+
+app.set('view engine', 'ejs');
 
 app.set('view engine', 'ejs');
 app.use(express.static('./public/assets'))
 app.set('views', './public/views');
 
-app.get('/', (req, res)=>{
-    res.render('index')
-})
 
-app.get('/builds', (req, res)=>{
-    res.render('builds');
+app.get('/', (req, res) => {
+    res.render('index');
 });
 
-app.get('/about', (req, res)=>{
-    res.render('about');
-});
 
-app.get('/downloads/builds/release/', (req, res)=>{
-    res.download('./files/builds/release.zip')
-});
 
-app.get('/downloads/builds/prerelease/', (req, res)=>{
-    res.download('./files/builds/prerelease.zip')
-});
 
-app.listen(7528, ()=>{
-    console.log("SkyAura Website version: " + " Is now running on port 7528!")
-})
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');          
+});

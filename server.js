@@ -14,9 +14,13 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.use('/assets', express.static('./public/assets'));
 
+app.get('/about', (req, res) => {
+    res.render('about');
+});
 
 
 app.listen(7528, () => {
-    console.log('Server is running on port 7528');          
+    console.log('SkyAura Website is running on port 7528\nAwaiting website requests...');
 });

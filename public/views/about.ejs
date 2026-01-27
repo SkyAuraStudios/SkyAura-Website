@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Collaborative VR platform">
+    <meta name="keywords" content="VR, Collaboration, SkyAura, Game Engine">
+    <meta name="author" content="SkyAura Studios">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>SkyAura - About</title>
+
+    <!-- Staff layout styles -->
+    <style>
+        .staff-box {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .staff-list {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .staff-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 15px 20px;
+            border-radius: 12px;
+            min-width: 260px;
+        }
+
+        .staff-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #4da3ff;
+        }
+
+        .staff-info {
+            text-align: left;
+        }
+
+        .staff-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .staff-role {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin: 2px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-main">
+        <div class="site-nav">
+            <%- include('includes/navbar') %>
+        </div>
+
+        <div class="site-content">
+            <div class="about-box" style="text-align: center;">
+                <h1>About SkyAura</h1>
+                <p>SkyAura is a cutting-edge Collaborative VR platform developed by SkyAura Studios.</p>
+                <p>Our platform leverages a custom C# game engine for robust backend performance and Unity 6 for an immersive frontend experience.</p>
+                <p>At SkyAura Studios, we are dedicated to pushing the boundaries of virtual collaboration, enabling users to connect, create, and innovate in shared virtual spaces.</p>
+            </div>
+
+            <div class="staff-box">
+                <h2>Meet the Team</h2>
+
+                <div class="staff-list">
+                    <div class="staff-card">
+                        <img src="<%= '/assets/imgs/staff/cybrixnova.png' %>" alt="CybrixNova" class="staff-avatar">
+                        <div class="staff-info">
+                            <p class="staff-name">CybrixNova</p>
+                            <p class="staff-role">Lead Developer & Founder</p>
+                        </div>
+                    </div>
+
+                    <div class="staff-card">
+                        <img src="<%= '/assets/imgs/staff/slythefloof.png' %>" alt="SlyTheFloof" class="staff-avatar">
+                        <div class="staff-info">
+                            <p class="staff-name">SlyTheFloof</p>
+                            <p class="staff-role">Lead System Operator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

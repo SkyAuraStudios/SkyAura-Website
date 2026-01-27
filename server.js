@@ -22,5 +22,5 @@ app.get('/about', (req, res) => {
 
 
 app.listen(7528, () => {
-    console.log('SkyAura Website is running on port 7528\nAwaiting website requests...');
+    console.log('http://localhost:7528\nSkyAura Website is running on port 7528\nAwaiting website requests...');
 });
